@@ -1,12 +1,9 @@
 package SS15;
 
-import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.Socket;
 
 public class UDPPortScanner {
     public static boolean[] busy = new boolean[1000];
