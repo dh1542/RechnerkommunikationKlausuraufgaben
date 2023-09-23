@@ -71,6 +71,7 @@ public class FTPServer {
         ServerSocket welcomeSocket = new ServerSocket(21);
 
         while(true){
+
             Socket connectionSocket = welcomeSocket.accept();
 
             handleDialog(connectionSocket);

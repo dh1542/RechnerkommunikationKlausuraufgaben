@@ -18,7 +18,7 @@ public class TCPFIN extends Base{
 
     @Override
     void receive(int flag) throws IOException {
-        // increase ACKs maybe ?
+        // increase ACKs maybe ? --> nope
         if(state == STATE.FINWAIT1){
             if(flag == ACK){
                 state = STATE.CLOSING;
